@@ -1,0 +1,272 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>Carbon Tax Calculator</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<meta name="description" content="Carbon Tax Calculator" />
+		<meta property="og:site_name" content="Carbon Tax Calculator" />
+		<meta property="og:title" content="Carbon Tax Calculator" />
+		<meta property="og:type" content="website" />
+		<meta property="og:description" content="Carbon Tax Calculator" />
+		<link href="https://fonts.googleapis.com/css?family=Manrope:400,400italic%7CInter:300,300italic,700,700italic" rel="stylesheet" type="text/css" />
+		<link rel="icon" type="image/png" href="static/images/favicon.png" />
+		<link rel="apple-touch-icon" href="static/images/apple-touch-icon.png" />
+		<link rel="stylesheet" href="static/main.css" />
+		<noscript><link rel="stylesheet" href="static/noscript.css" /></noscript>
+	</head>
+	<body class="is-loading">
+		<div id="wrapper">
+			<div id="main">
+				<div class="inner">
+					<section id="home-section">
+						<div id="container13" class="container columns full screen">
+							<div class="wrapper">
+								<div class="inner">
+									<div>
+										<div id="image07" class="image">
+											<span class="frame"><img src="static/images/image07.png" alt="" /></span>
+										</div>
+									</div>
+									<div>
+										<hr id="divider01" class="style1">
+										<h1 id="text12" class="style3">Carbon Tax Calculator</h1>
+										<p id="text13" class="style5"><span>An applications made helps organizations to develop reduction plans for carbon emissions and costs on an annual basis!</span><br /><span>Created by Ryan Xiang</span><br /><span>Contributed to by Jace Billingsley</span></p>
+										<ul id="buttons06" class="style2 buttons">
+											<li>
+												<a href="#main" class="button n01"><svg><use xlink:href="static/icons.svg#arrow-right-alt-light"></use></svg><span class="label">Continue to App</span></a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section id="residential-section">
+						<h2 id="text85" class="style4">Residential</h2>
+						<ul id="buttons13" class="style3 buttons">
+							<li>
+								<a href="#main" class="button n01"><svg><use xlink:href="static/icons.svg#arrow-left-alt"></use></svg><span class="label">Back</span></a>
+							</li>
+						</ul>
+						<div id="container02" class="container columns">
+							<div class="wrapper">
+								<div class="inner">
+									<div>
+										<h3 id="text06" class="style6">Solar Panel System (5KW)</h3>
+										<p id="text07" class="style2"><span>Solar panels help generate electricity for homes, and are green energy.</span><br /><span>-3,402 kg CO2 (Average)</span></p>
+										<ul id="buttons09" class="style1 buttons">
+											<li>
+												<a onclick='solor5Add()' href="#residential" class="button n01">+</a>
+											</li><li>
+												<a href="#residential" target='_blank' class="button n02" id='solar-5kw-number'>#</a>
+											</li><li>
+												<a onclick='solor5Remove()' href="#residential" class="button n03">-</a>
+											</li>
+										</ul>
+									</div>
+									<div>
+										<h3 id="text10" class="style6">Solar Panel System (10KW)</h3>
+										<p id="text16" class="style2"><span>Solar panels help generate electricity for homes, and are green energy.</span><br /><span>-6,804 kg CO2 (Average)</span></p>
+										<ul id="buttons10" class="style1 buttons">
+											<li>
+												<a onclick='solor10Add()' href="#residential" class="button n01">+</a>
+											</li><li>
+												<a href="https://domain.ext/path" class="button n02" id='solar-10kw-number'>#</a>
+											</li><li>
+												<a onclick='solor10Remove()' href="#residential" class="button n03">-</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section id="energy-section">
+						<h2 id="text03" class="style4">Energy Production</h2>
+						<ul id="buttons12" class="style3 buttons">
+							<li>
+								<a href="#main" class="button n01"><svg><use xlink:href="static/icons.svg#arrow-left-alt"></use></svg><span class="label">Back</span></a>
+							</li>
+						</ul>
+						<div id="container03" class="container columns">
+							<div class="wrapper">
+								<div class="inner">
+									<div>
+										<h3 id="text23" class="style6">Wind Turbine</h3>
+										<p id="text25" class="style2"><span>A wind turbine is a device that converts the wind&#39;s kinetic energy into electrical energy.</span><br /><br /><span>3,400 MWh/Year (Average)</span><br /><span>$2.5 Million (Average)</span><br /><span>-3,630,788 kg CO2 (Average)</span></p>
+										<ul id="buttons15" class="style1 buttons">
+											<li>
+												<a onclick='wind1Add()' href="#energy" class="button n01">+</a>
+											</li><li>
+												<a href="#" class="button n02" id='wind1'>#</a>
+											</li><li>
+												<a onclick='wind1Remove()' href="#energy" class="button n01">-</a>
+											</li>
+										</ul>
+									</div>
+									<div>
+										<h3 id="text26" class="style6">Nuclear Power Plant</h3>
+										<p id="text27" class="style2"><span>A nuclear power plant is a facility that converts atomic energy into usable power.</span><br /><br /><span>5 Million MWh/Year (Average)</span><br /><span>$7.0 Billion (Average)</span><br /><span>-4,341,667,837 kg CO2 (Average)</span></p>
+										<ul id="buttons16" class="style1 buttons">
+											<li>
+												<a onclick='nuclearAdd()' href="#energy" class="button n01">+</a>
+											</li><li>
+												<a href="#" class="button n02" id='nuclear'>#</a>
+											</li><li>
+												<a onclick='nuclearRemove()' href="#energy" class="button n01">-</a>
+											</li>
+										</ul>
+									</div>
+									<div>
+										<h3 id="text28" class="style6">Solar Panel Farm</h3>
+										<p id="text29" class="style2"><span>Solar panels generate electrons when exposed to sunlight, which then creates electricity.</span><br /><br /><span>5 Million MWh/Year (Average)</span><br /><span>$7.0 Billion (Average)</span><br /><span>-1,798,327 kg CO2 (Average)</span></p>
+										<ul id="buttons17" class="style1 buttons">
+											<li>
+												<a onclick='solarFAdd()' href="#energy" class="button n01">+</a>
+											</li><li>
+												<a href="#" id='solarF' class="button n02">#</a>
+											</li><li>
+												<a onclick='solarFRemove()' href="#energy" class="button n01">-</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section id="automobile-section">
+						<div id="container04" class="style1 container default">
+							<div class="wrapper">
+								<div class="inner">
+									<h2 id="text19" class="style4">Automobiles</h2>
+									<ul id="buttons14" class="style3 buttons">
+										<li>
+											<a href="#main" class="button n01"><svg><use xlink:href="static/icons.svg#arrow-left-alt"></use></svg><span class="label">Back</span></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div id="container01" class="container columns">
+							<div class="wrapper">
+								<div class="inner">
+									<div>
+										<h3 id="text08" class="style6">Hybrid Car</h3>
+										<p id="text09" class="style2"><span>A hybrid car combines at least one electric motor with a gasoline engine.</span><br /><span>-2,348 kg CO2 (Average)</span></p>
+										<ul id="buttons07" class="style1 buttons">
+											<li>
+												<a onclick='hybridAdd()' href="#automobile" class="button n01">+</a>
+											</li><li>
+												<a href="#" id='hybrid' class="button n02">#</a>
+											</li><li>
+												<a onclick='hybridRemove()' href="#automobile" class="button n01">-</a>
+											</li>
+										</ul>
+									</div>
+									<div>
+										<h3 id="text14" class="style6">Plugin Hybrid Car</h3>
+										<p id="text15" class="style2"><span>A plug-in hybrid electric vehicle (PHEV) is a vehicle which has a rechargeable battery pack.</span><br /><span>-2,611 kg CO2 (Average)</span></p>
+										<ul id="buttons08" class="style1 buttons">
+											<li>
+												<a onclick='pHybridAdd()' href="#automobile" class="button n01">+</a>
+											</li><li>
+												<a href="#" id='pHybrid' class="button n02">#</a>
+											</li><li>
+												<a onclick='pHybridRemove()' href="#automobile" class="button n01">-</a>
+											</li>
+										</ul>
+									</div>
+									<div>
+										<h3 id="text02" class="style6">All Electric Car</h3>
+										<p id="text05" class="style2"><span>All-electric vehicles (EVs) have an electric motor instead of an internal combustion engine.</span><br /><span>-3,475 kg CO2 (Average)</span></p>
+										<ul id="buttons02" class="style1 buttons">
+											<li>
+												<a onclick='eVAdd()' href="#automobile" class="button n01">+</a>
+											</li><li>
+												<a href="#" id='eV' class="button n02">#</a>
+											</li><li>
+												<a onclick='eVRemove()' href="#automobile" class="button n01">-</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section id="main-section">
+						<div id="container07" class="style1 container default">
+							<div class="wrapper">
+								<div class="inner">
+									<h2 id="text11" class="style4">Select a Category</h2>
+								</div>
+							</div>
+						</div>
+						<div id="container14" class="container columns">
+							<div class="wrapper">
+								<div class="inner">
+									<div>
+										<div id="image02" class="style3 image">
+											<span class="frame deferred"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCA2MDAgNjAwIiB3aWR0aD0iNjAwIiBoZWlnaHQ9IjYwMCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI%2BPHJlY3QgZmlsbD0idHJhbnNwYXJlbnQiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiLz48L3N2Zz4%3D" data-src="static/images/image02.png" alt="" /></span>
+										</div>
+										<h3 id="text01" class="style6">Automobiles</h3>
+										<p id="text84" class="style2">View automobile options to improve carbon emissions!</p>
+										<ul id="buttons03" class="style2 buttons">
+											<li>
+												<a href="#automobile" class="button n01"><svg><use xlink:href="static/icons.svg#arrow-right-alt-light"></use></svg><span class="label">View Category</span></a>
+											</li>
+										</ul>
+									</div>
+									<div>
+										<div id="image03" class="style3 image">
+											<span class="frame deferred"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCA2MDAgNjAwIiB3aWR0aD0iNjAwIiBoZWlnaHQ9IjYwMCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI%2BPHJlY3QgZmlsbD0idHJhbnNwYXJlbnQiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiLz48L3N2Zz4%3D" data-src="static/images/image03.png" alt="" /></span>
+										</div>
+										<h3 id="text20" class="style6">Residential</h3>
+										<p id="text21" class="style2">View residential options to improve carbon emissions!</p>
+										<ul id="buttons05" class="style2 buttons">
+											<li>
+												<a href="#residential" class="button n01"><svg><use xlink:href="static/icons.svg#arrow-right-alt-light"></use></svg><span class="label">View Category</span></a>
+											</li>
+										</ul>
+									</div>
+									<div>
+										<div id="image01" class="style3 image">
+											<span class="frame"><img src="static/images/image01.png" alt="" /></span>
+										</div>
+										<h3 id="text04" class="style6">Energy Production</h3>
+										<p id="text22" class="style2">View energy production options to improve carbon emissions!</p>
+										<ul id="buttons04" class="style2 buttons">
+											<li>
+												<a href="#energy" class="button n01"><svg><use xlink:href="static/icons.svg#arrow-right-alt-light"></use></svg><span class="label">View Category</span></a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<ul id="buttons01" class="style4 buttons">
+							<li>
+								<a href="#results" class="button n01"><svg><use xlink:href="static/icons.svg#arrow-right-alt-light"></use></svg><span class="label">Calculate Emissions</span></a>
+							</li>
+						</ul>
+					</section>
+					<section id="results-section">
+						<div id="container06" class="style1 container default">
+							<div class="wrapper">
+								<div class="inner">
+									<hr id="divider04" class="style1">
+									<h2 id="text24" class="style4">Results</h2>
+									<p id="text66" class="style2">List Results Here</p>
+									<ul id="buttons18" class="style2 buttons">
+									</ul>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+		<script src="static/main.js"></script>
+    <script src="static/script.js"></script>
+	</body>
+</html>
